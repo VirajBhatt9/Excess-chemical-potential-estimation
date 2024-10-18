@@ -44,6 +44,11 @@ Here, $\Delta U$ represents potential energy difference given by $\Delta U=U_{\l
 
 For any molecular simulation, we require to have a smooth curvature of the potential energy curve, without any discontinuties. A discontinuity in the potential energy curve can lead to numerical errors and erroneous results. To so, in free energy simulations, we employ the use of $\lambda$ and $\alpha$ parameters to get a smooth potential energy curve. 
 
-Consider the same system with now the potential energy being given by:
+Consider the parameter \lambda\ which linearly connects the states $(1)$ and $(0)$. The potential energy of the system can then be given as:
 
-$U_{\lambda\} $
+$U_{(\lambda\)} = (1-\lambda\)U_{(1)}+\lambda\ U_{(0)}$
+
+Here, $\lambda\ \in [0,1]$.
+
+Now, we can vary in multiple steps, starting from 0 till 1. For example, consider 10 steps, each step-size being 0.1.
+
